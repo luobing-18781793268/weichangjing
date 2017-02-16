@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>tem</title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<style>
+			*{margin: 0;padding: 0;}
+			body,html{
+				height: 100%;
+				width: 100%;
+			}
+			.swiper-container{
+				width: 100%;
+				height: 100%;
+			}
+			.swiper-slide{
+				width: 100%;
+				height: 100%;
+				position: relative;
+				background-color: rgb(62,136,241);
+			}
+			img{
+				width: 100%;
+			}
+			/**/
+			.indexTxt{
+				width: 55%;
+				position: absolute;
+				left: 20%;
+				top: 20%;
+			}
+			.indexBuilding{
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+			}
+			.indexFlowers01,.indexFlowers02{
+				position: absolute;
+				width: 10%;
+			}
+			.indexFlowers01{
+				top: 21%;
+				left: 15%;
+			}
+			.indexFlowers02{
+				top: 30%;
+				left: 61%;
+			}
+			.indexElements{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+			.indexElements img{
+				height: 100%;
+				animation: suofang 3s infinite linear;
+			}
+			@keyframes suofang{
+				0%{transform: scale(1);}
+				50%{transform: scale(1.05);}
+				100%{transform: scale(1);}
+			}
+			.delay_1s{
+				animation-delay: 1s;
+			}
+			.indexFlight{
+				position: absolute;
+				width: 75%;
+				top: 43%;
+				left: 12.5%;
+			}
+			.indexFlight img{
+				animation: suofang 3s infinite linear;
+			}
+			.arrow-up{
+				position: absolute;
+				width: 15%;
+				left: 42.5%;
+				bottom: 2%;
+				
+			}
+			.arrow-up img{
+				animation: arrow-up 2s infinite linear;
+				
+			}
+			@keyframes arrow-up{
+				0%{opacity: 0;transform: translateY(0);}
+				50%{opacity: 1;transform: translateY(10px);}
+				80%{}
+				100%{opacity: 0;transform: translateY(0);}
+			}
+			
+			/**/
+			.earlyBg{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+			.earlyBg img{
+				height: 100%;
+			}
+			.swiper-slide02{
+				overflow: hidden;
+			}
+			.wasStar{
+				width: 100%;
+				height: 100%;
+				position: absolute; 
+				visibility: visible;
+				animation-delay: 1s;
+				/*animation: star 1.5s linear;*/
+				/*background-clip: content-box;*/
+			}
+			.wasStar img{
+				width: 100%;
+				height: 100%;
+				top: -100%;
+				left: 100%;
+				animation: star 1.5s linear;
+			}
+			
+			@keyframes star{
+				0%{top: -100%;left: 100%;}
+				100%{top: 0;left: 0;}
+			}
+			.wasIT{
+				position: absolute;
+				width: 70%;
+				top: 38%;
+				left: 15%;	
+			}
+			.wasFarm{
+				position: absolute;
+				width: 70%;
+				top: 53%;
+				left: 15%;
+			}
+			
+			/**/
+			.earlyBg{
+				width: 100%;
+			}
+			.earlyBuilding{
+				width: 100%;
+				position: absolute;
+				bottom: 0%;
+			}
+			.earlyTitle{
+				position: absolute;
+				width: 30%;
+				top: 10%;
+				left: 0%;
+			}
+			.earlyBuilding1{
+				width: 100%;
+				position: absolute;
+				bottom: 0%;
+			}
+			.lastBusStation{
+				width: 100%;
+				position: absolute;
+				bottom: 0%;
+			}
+			.bus{
+				position: absolute;
+				width: 60%;
+				bottom: 10%;
+			}
+			.lastBusTitle{
+				position: absolute;
+				width: 30%;
+				top: 10%;
+			}
+			.lastBusAvatar{
+				position: absolute;
+				width: 30%;
+				bottom: 10%;
+				left: 100%;
+			}
+			.lastBusAvatar img{
+				/*animation: avatar 2s linear;*/
+				/*left: 100%;*/
+			}
+			@keyframes avatar{
+				from{left: 100%;}
+				to{left: 20%;}
+			}
+			
+			.myTeamBg{
+				width: 100%;
+				position: absolute;
+				height: 100%;
+			}
+			.myTeamWall{
+				position: absolute;
+				height: 50%;
+				width: 30%;
+				left: 70%;
+				bottom: 0%;
+			}
+			.myTeamAvatar{
+				position: absolute;
+				width: 20%;
+				bottom: 49%;
+				left: 70%;
+			}
+			.myteamWhereTxt{
+				position: absolute;
+				width: 44%;
+				bottom: 11%;
+				left: 18%;
+			}
+			.myTeamTxt{
+				position: absolute;
+				width: 20%;
+				left: 15%;
+			}
+			.myTeamTxt00{
+				top: 25%;
+				width: 10%;
+			}
+			.myTeamTxt01{
+				top: 30%;
+			}
+			.myTeamTxt02{
+				top: 37%;
+			}
+			.myTeamTxt03{
+				top: 44%;
+			}
+			
+			/**/
+			.myani{
+				position: absolute;
+				width: 100%;
+			}
+			.lightOffBg{
+				height: 100%;
+			}
+			.lightOffBg img{
+				height: 100%;
+			}
+			.cornerWall{
+				width: 17%;
+				right: 0%;
+				top: 17%;
+			}
+			.lightOff{
+				width: 13%;
+				height: 100%;
+				left: 12%;
+				bottom: -19%;
+			}
+			.lightOff img{
+				height: 80%;
+			}
+			.cornerTitle{
+				width: 50%;
+				right: 0%;
+				top: 14%;
+			}
+			
+			/**/
+			.aboutBg{
+				width: 100%;
+				height: 100%;
+			}
+			.aboutBg img{
+				height: 100%;
+			}
+			.footTa{
+				width: 70%;
+				top: 45%;
+				left: 15%;
+			}
+			.footTx{
+				width: 70%;
+				top: 60%;
+				left: 15%;
+			}
+			.footAvatar{
+				width: 50%;
+				top: 20%;
+				left: 35%;
+			}
+			.footCity{
+				width: 100%;
+			}
+			.runBg{
+				height: 100%;
+			}
+			.runBg img{
+				height: 100%;
+			}
+			.runAvatar{
+				width: 25%;
+				left: 10%;
+				top: 20%;
+			}
+			.runTa{
+				width: 70%;
+				top: 50%;
+				left: 15%;
+			}
+			.runTxt{
+				width: 50%;
+				top: 65%;
+				left: 25%;
+			}
+			.swiper-slide06{
+				background-color: rgb(74,211,157);
+			}
+			.salaryTa{
+				width: 80%;
+				left: 10%;
+				top: 60%;
+			}
+			.salaryBg{
+				width: 86%;
+				left: 7%;
+				top: 5%;
+			}
+			.salaryAvatar{
+				width: 45%;
+				left: 25%;
+				top: 10%;
+			}
+			.salaryTxt{
+				width: 70%;
+				left: 15%;
+				top: 65%;
+			}
+			.mymusic{
+				position: fixed;
+				top: 0%;
+				right: 0%;
+				padding: 30px;
+				background:url(img/musicBtn.png) no-repeat 50% 50%;
+				z-index: 9999;
+			}
+			.musicoff{
+				position: fixed;
+				top: 0%;
+				right: 0%;
+				padding: 30px;
+				background:url(img/musicBtnOff.png) no-repeat 50% 50%;
+				z-index: 9999;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="swiper-container">
+			<div class="mymusic" id="mBtn">
+	    				<audio id="music" src="img/music.mp3" loop autoplay></audio>
+	    		</div>
+		    <div class="swiper-wrapper">
+		    	
+		        <div class="swiper-slide">
+		        	<div class="indexBuilding ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay=".5s"><img src="img/indexBuilding.png"/> </div>
+		        	<div class="indexTxt ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay=".5s"><img src="img/indexTxt.png"/> </div>
+		        	<div class="indexFlowers01 ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="1.5s"><img src="img/indexFlowers01.png"/> </div>
+		        	<div class="indexFlowers02 ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="1s"><img src="img/indexFlowers02.png"/> </div>
+		        	
+		        	<div class="indexElements ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="1s">
+		        		<img  src="img/indexElements.png"/>
+		        	</div>
+		        	<div class="indexElements ani"  swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="1s">
+		        		<img  src="img/indexStars.png"/>
+		        	</div>
+		        	<div class="indexElements ani"  swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="1s">
+		        		<img src="img/indexCloud.png"/>
+		        	</div>
+		        	<div class="indexFlight ani"  swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="1.5s"><img src="img/indexFlight.png"/></div>
+		        	
+		        	<div class="arrow-up ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="1.5s"><img src="img/arrow-up.png"/> </div>
+		        	
+	    		</div>
+	    		
+	    		<div class="swiper-slide swiper-slide02">
+		        	<div class="earlyBg ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="0s" > <img src="img/earlyBg.jpg"/></div>
+		        	
+		        	<div class="wasStar ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s"><img src="img/wasStar.png"/> </div>
+		        	
+		        	
+		        	<div class="wasIT ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="0.5s"><img src="img/wasIT.png"/> </div>
+		        	<div class="wasFarm ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="1s"><img src="img/wasFarm.png"/> </div>
+		        	
+		        	<div class="arrow-up ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="1.5s"><img src="img/arrow-up.png"/> </div>
+		        	
+	    		</div>
+	    		
+	    		<div class="swiper-slide">
+	    			<div class="earlyBg ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="0s"><img src="img/earlyBg.jpg"/> </div>
+	    			
+		        	<div class="fadeOut01 ani" swiper-animate-effect="fadeOut" swiper-animate-duration=".5s" swiper-animate-delay="3s">
+			        	<div class="earlyBuilding ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay=".5s"><img src="img/earlyBuilding.png"/> </div>
+			        	<div class="earlyTitle ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="1.5s"><img src="img/earlyTitle.png"/> </div>
+		        	</div>
+		        	
+		        	<div class="fadeOut02 ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="4s">
+		        		<div class="fadeOut03 ani" swiper-animate-effect="fadeOut" swiper-animate-duration=".5s" swiper-animate-delay="7s">
+		        			<div class="lastBusStation ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="3s"><img src="img/lastBusStation.png"/> </div>
+			        		<div class="bus ani" swiper-animate-effect="bounceOutLeft" swiper-animate-duration="4.5s" swiper-animate-delay="4.5s"><img src="img/bus.png"/> </div>
+			        		<div class="lastBusAvatar ani" swiper-animate-effect="bounceOutLeft" swiper-animate-duration="15s" swiper-animate-delay="2s"><img src="img/lastBusAvatar.png"/> </div>
+			        		<div class="lastBusTitle ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="3.5s"><img src="img/lastBusTitle.png"/> </div>
+		        		</div>
+		        	</div>
+		        	
+		        		<div class="myTeamBg ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="8s"><img src="img/myTeamBg.jpg"/> </div>
+		        		<div class="myTeamWall ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="8s"><img src="img/myTeamWall.png"/> </div>
+		        		<div class="myTeamAvatar ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="8.5s"><img src="img/myTeamAvatar.png"/> </div>
+		        		<div class="myteamWhereTxt ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="10s"><img src="img/myteamWhereTxt.png"/> </div>
+		        		<div class="myTeamTxt00 myTeamTxt ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="9.5s"><img src="img/myTeamTxt.png"/> </div>
+		        		<div class="myTeamTxt01 myTeamTxt ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="10s"><img src="img/myTeamTxt01.png"/> </div>
+		        		<div class="myTeamTxt02 myTeamTxt ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="10.5s"><img src="img/myTeamTxt02.png"/> </div>
+		        		<div class="myTeamTxt03 myTeamTxt ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="11s"><img src="img/myTeamTxt03.png"/> </div>
+		        		<div class="arrow-up ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="1.5s"><img src="img/arrow-up.png"/> </div>
+		        		
+	    		</div>
+	    		
+	    		<div class="swiper-slide">
+		        	<div class="lightOffBg ani myani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="0s"><img src="img/lightOffBg.jpg"/> </div>
+		        	<div class="cornerWall myani ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="0s"><img src="img/cornerWall.png"/> </div>
+		        	<div class="lightOff myani ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="0s"><img src="img/lightOff.png"/> </div>
+		        	<div class="cornerTitle myani ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1s"><img src="img/cornerTitle.png"/> </div>
+		        	<div class="arrow-up ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="1.5s"><img src="img/arrow-up.png"/> </div>
+		        	
+	    		</div>
+	    		
+	    		<div class="swiper-slide">
+	    			<div class="aboutBg ani myani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="0s"> <img src="img/aboutBg.jpg"/></div>
+	    			<div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration=".5s" swiper-animate-delay="3s">
+	    				<div class="footTa myani ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay=".5s"> <img src="img/footTa.png"/></div>
+	    			</div>
+	    			<div class="footCity myani ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay=".5s"> <img src="img/footCity.jpg"/></div>
+	    			<div class="footAvatar myani ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay=".5s"> <img src="img/footAvatar.png"/></div>
+	    			<div class="footTx myani ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s"> <img src="img/footTx.png"/></div>
+	    			<div class="arrow-up ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="1.5s"><img src="img/arrow-up.png"/> </div>
+	    			
+	    		</div>
+	    		
+	    		<div class="swiper-slide">
+	    			<div class="runBg myani ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="0s"> <img src="img/runBg.jpg"/></div>
+	    			<div class="runAvatar myani ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="0s"> <img src="img/runAvatar.png"/></div>
+	    			<div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="1.5s" swiper-animate-delay="2s">
+	    				<div class="runTa myani ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0s"> <img src="img/runTa.png"/></div>
+	    			
+	    			</div>
+	    			<div class="runTxt myani ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="2.5s"> <img src="img/runTxt.png"/></div>
+	    			<div class="arrow-up ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="1.5s"><img src="img/arrow-up.png"/> </div>
+	    			
+	    		</div>
+	    		
+	    		<div class="swiper-slide swiper-slide06">
+	    			<div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="1s" swiper-animate-delay="2s">
+	    				<div class="salaryTa myani ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s"><img src="img/salaryTa.png"/></div>
+	    			</div>
+	    			<div class="salaryBg myani ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s"> <img src="img/salaryBg.png"/></div>
+	    			<div class="salaryAvatar myani ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s"> <img src="img/salaryAvatar.png"/></div>
+	    			<div class="salaryTxt myani ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s"> <img src="img/salaryTxt.png"/></div>
+	    			<div class="arrow-up ani" swiper-animate-effect="fadeIn" swiper-animate-duration=".5s" swiper-animate-delay="2s"><img src="img/arrow-up.png"/> </div>
+	    			
+	    		</div>
+	    		
+	    	</div>
+	    </div>
+		
+	<script type="text/javascript" src="js/swiper.min.js" ></script>
+	<script type="text/javascript" src="js/swiper.animate1.0.2.min.js" ></script>
+	<script>
+		var mySwiper = new Swiper ('.swiper-container', {
+			  direction:'vertical',
+			  onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+			    swiperAnimateCache(swiper); //隐藏动画元素 
+			    swiperAnimate(swiper); //初始化完成开始动画
+			  },
+			  onSlideChangeEnd: function(swiper){ 
+			    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			  } 
+		})
+		
+		var aMusic = document.getElementById('music')
+		var mBtn = document.getElementById("mBtn")
+		var flag = 1;
+		mBtn.onclick = function(){
+			flag++;
+			if(flag%2==0){
+				this.className = 'musicoff';
+				aMusic.pause();
+			}else{
+				this.className = 'mymusic';
+				aMusic.play();
+			}
+		}
+		
+		
+		
+	</script>
+	</body>
+</html>
